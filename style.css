@@ -1,19 +1,33 @@
-.box {
-  min-height: 50px;
-  padding: 5px;
-  margin: 5px;
-  font-weight: 800;
-  color: #fff;
+
+html {
+    position: relative;
+    min-height: 100%;
 }
 
-.skyblue {
-  background: deepskyblue;
+body {
+    background-color: rgb(231, 227, 227);
+
+}
+.footer{
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: gray;
+    position: absolute;
+    margin-top: 20px;
+    } 
+
+.footer-text {
+    font-size: 14px;
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+
+}
+.footer-top {
+  height: 5px;
+  padding-top: 2px;
+  background-color: rgb(37, 175, 157);
+  width: 100%;
 }
 
-.purple {
-  background: rebeccapurple;
-}
-
-.red {
-  background: indianred;
-}
