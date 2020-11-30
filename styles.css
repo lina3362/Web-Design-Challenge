@@ -1,223 +1,244 @@
-
-html {
-    position: relative;
+html{
+    position: realtive;
     min-height: 100%;
-}
-
-body {
-    background-color: rgb(231, 227, 227);
-
-}
-.footer{
-    bottom: 0;
-    height: 40px;
-    width: 100%;
-    background-color: gray;
-    position: absolute;
-    margin-top: 20px;
-    } 
-
-.footer-text {
-    font-size: 14px;
-    margin-top: 5px;
-    color: white;
-    text-align: center;
-
-}
-.footer-top {
-  height: 5px;
-  padding-top: 2px;
-  background-color: rgb(37, 175, 157);
-  width: 100%;
-}
-
-
-.data-city {
-    background-color: white;
-    padding-left: 40px;
-    padding-top: 30px;
-    padding-right: 40px;
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.data-h1 {
-    color: rgb(37, 175, 157);
-    font-size: 36px;
-    margin-top: 5px;
-    margin-bottom: 25px;
-    text-align: center;
-
-}
-.data-p {
+  } 
+  
+  body{
+    margin-bottom: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f1f1; 
+  }
+  /* Media query for body */
+  @media only screen and (max-width: 767px) {
+    body {
+      background-color: #fff;
+    }
+  } 
+  h2 {
+    font-size: 40px;
+    color: #32d5e0;
+    font-family: Georgia, Times, "Times New Roman",serif;
+    font-weight: bold;
+    margin-left: 77px; 
+  }
+  
+  h3 {
     font-size: 16px;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    
-}
-.navbar-default {
-    background-color: white;
-} 
-.navbar-brand {
-    background-color: rgb(37, 175, 157);
-      
-}   
-
-@media only screen and (max-width: 768px) {
+    /* color: #32d5e0; */
+    font-family: Georgia, Times, "Times New Roman",serif;
+    /* font-weight: bold;    */
+    margin-left: 50px;
+  
+  }
+  
+  h4 {
+    font-size: 16px;
+    /* color: #32d5e0; */
+    font-family: Georgia, Times, "Times New Roman",serif;
+    /* font-weight: bold;    */
+    margin-left: 77px;
+  
+  }
+  
+  .thubnail {
+      /* box model */
+      padding-top: 15px;
+      padding-bottom: 10px;
+  }
+  
+  /* Media query for navigation */
+  @media only screen and (max-width: 767px) {
     .navbar-header {
-        background-color: rgb(37, 175, 157);
+      background-color: #fff;
+    }
+  } 
+  
+    /* Navigation styles */ 
+  
+    .navbar-custom {
+      background-color: #fff;
     }
   
+    #landing-btn {
+      /* box model */
+      height: 50px;
+      padding-top: 15px;
+      padding-bottom: 10px;
   
-}
-
-    
-
-
-.add-summary {
-    background-color: white;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    
-}
-#sum-pic {
-    float: left;
-    width: 220px;
-    height: 200px;
-    
-    margin-bottom: 10px;
-    margin-right: 20px;
-    margin-left: 10px;
-}
-.summary {
-    font-size: 18px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px;
-    background-color: white;
-}
-#sum-h1 {
-    color: rgb(37, 175, 157);
-    font-size: 36px;
-    padding-top: 25px;
-    text-align: center;
-    padding-bottom: 25px;
-    
-}
-
-@media only screen and (max-width: 768px) {
-    #sum-h1 {
-        font-size: 24px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+      /* Positioning */
+      margin-left: 90px;
+      font-family: Georgia, Times, "Times New Roman", serif;
+  
+      /* Typography */
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff; 
+      background: #0a686e;
     }
   
+  /* Logo hover state */
+  #landing-btn:hover {
+      /* Visual */
+      opacity: 0.7;
+  }
   
-}
-
-
-.div_vis_img {
-    width: 100%;
-    text-align: center;
-    padding-bottom: 20px;
-    margin-top: 30px;
+  .navbar-right-custom {
+    /* box-model */
+    padding-top: 6px;
+    padding-right: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    opacity:0.8;
+  }
+  
+  /* Add a dark background color with a little bit see-through */ 
+  /* .navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 20px !important;
+    letter-spacing: 4px;
+    opacity:0.8;
+  } */
+  
+  /* Add a gray color to all navbar links */
+  .navbar li a, .navbar .navbar-brand { 
+    color: slategray;
+    font-family: Georgia, Times, "Times New Roman", serif;
+  }
+  
+  /* On hover, the links will turn white */
+  .navbar-nav ul li a:hover {
+    /* color: #fff !important; */
+    color: #2d2d30 !important; 
+    display: block;
+  }
+  
+  /* Dropdown */
+  .open .dropdown-toggle {
+    /* color: #fff ; */
+    color: #2d2d30 !important; 
+    /* background-color: #555 !important;*/
+    opacity: 0.7 ;
+    filter:alpha(opacity=70);
+  }
+  
+  /* For visualization pages - main frame style */
+  
+  .description-header {
     margin-bottom: 30px;
-}
-
-.vis_img {
-    width: 150px;
-    height: 150px;
-    padding-right: 5px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    margin-left: 15px;
-   
-
-}
-.vis_img:active {
-    border: 2px solid rgb(37, 175, 157);
-}
-
-
-#vis-h2 {
-    color: rgb(37, 175, 157);
-    font-size: 24px;
-    padding-top: 15px;
-    padding-bottom: 5px;  
-    margin-left: 15px;
-}
-
-
-
-
-
-.chart_page {
-    font-size: 18px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    background-color: rgb(245, 242, 239);
-    margin-bottom: 60px;
-}
-.page-h1 {
-    color: rgb(37, 175, 157);
-    font-size: 36px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    padding-top: 10px;
-    
-    
-}
-
-@media only screen and (max-width: 768px) {
-    .page-h1 {
-        font-size: 24px;
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #076369;
+  }
   
-  
-}
-
-
-.hr-page {
-    color: rgb(105, 103, 102);
-    border-width: 2px;
-    
-}
-.comp {
-    margin-bottom: 60px;
-    width: 80%;
-}
-.comp-h4 {
-    color: rgb(37, 175, 157);
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-.comp-h2 {
-    color: rgb(37, 175, 157);
-    text-align: center;
-}
-#comp-p {
+  .description-hr {
+    font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 16px;
-    text-align: center;
-}
-.comp_img {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.comp_page {
-    font-size: 18px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    background-color: rgb(245, 242, 239);
+  }
+  
+  /* Media query for description content */
+  @media only screen and (max-width: 767px) {
+    .description-content{
+      padding: 0;
+      margin-top: 0;
+    }
+  } 
+  
+  .description-content {
+    /* box model */
+    /* width: 560px;
+    height: 650px; */
+    padding: 10px; 
+    margin-top: 26px;
+    background-color: #fff;
+  }
+  
+  .description-text {
+    padding-bottom: 20px
+  }
+  
+  #description-image {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  
+  /* for paragraph text */
+  .description-content > p {
+    /* box model */
+    padding-top: 17px;
+    font-size: 17px;
+    color: slategray;
+    margin-top: 5px;
+    margin-right: 20px
+   }
+  
+  /* For comparison page - main frame style */
+  
+  .description2-header {
+    margin-bottom: 30px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #07464b;
+  }
+  
+  .description2-content {
+    padding: 10px; 
+    margin-top: 26px;
+    background-color: #fff;
+  }
+  
+  .comparison-header {
     margin-bottom: 15px;
-}
-
-.tab {
-    margin-bottom: 60px;
-}
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 177px;
+    color: #063a3e;
+  } */
+  
+  /* imageNav styles */
+  
+  #imageNav-area {
+    width: 100%;
+    padding: 30px 30px 30px;
+    margin-top: 32px;
+    background-color: #fff;
+  }
+  
+  /* #images {
+    padding-top: 15px;
+    text-align: center;
+  } */
+  
+  .imageNav-header {
+    margin-bottom: 15px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0a6066;
+  }
+  
+  .imageNav-content {
+    padding: 10px; 
+    margin-top: 26px;
+    background-color: #fff;
+  }
+  
+  .imageNav-photo {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .imageNav-photo:hover {
+    opacity: 0.7;
+  }
+  
+  .imageNav-photo.active {
+    border: 2px solid #32d5e0;
+  }
